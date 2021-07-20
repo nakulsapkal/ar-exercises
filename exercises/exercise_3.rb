@@ -6,3 +6,6 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+@store3=Store.third
+Store.destroy(@store3.id)
+puts Store.count()
