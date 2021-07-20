@@ -8,3 +8,14 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+@total_revenue =Store.sum("annual_revenue")
+@total_stores = Store.count()
+
+puts @total_revenue/@total_stores
+
+
+@stores = Store.where("annual_revenue > ?",999999)
+.size()
+
+puts @stores
